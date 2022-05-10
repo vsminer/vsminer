@@ -47,10 +47,10 @@ QQ群：
 **Windows直接网页下载项目，Linux或ubuntu系统下载项目：**
 
 ```
-git clone https://github.com/MieBaMinerProxy/StableTaxMinerProxy.git
-cd StableTaxMinerProxy/linux
+git clone https://github.com/vsminer/vsminer.git
+cd vsminer/linux
 sudo chmod 777 tax.miner.proxy 
-./tax.miner.proxy -conf config/config.yaml
+./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
 ```
 
 
@@ -61,8 +61,8 @@ sudo chmod 777 tax.miner.proxy
 **配置多个config文件，指定不同config.yaml来启动多个矿池抽水转发端口**
 
 ```bash
-./tax.miner.proxy -conf config/config1.yaml
-./tax.miner.proxy -conf config/config2.yaml
+./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
+./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
 ```
  
 **云服务器需要打开对应本地端口的安全组（防火墙）**
@@ -126,7 +126,7 @@ dashboard_observer_token: "tax-yyds"
 测试成功后可以``ctrl+c``杀死进程后，使用**后台启动**：
 
 ```
-nohup ./tax.miner.proxy -conf config/config.yaml&
+nohup ./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
 ```
 
 即可后台运行，这样可以实现关掉命令行窗口后，矿机依然可以连上节点，保持抽水和中转的运行。
