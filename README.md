@@ -13,11 +13,11 @@
 
 Telegram:
 电报加群链接(https://t.me/+hj8iSYpAAgFiNmM1)
-![img](images/2.jpg)
+![img](images/telegram.jpg)
 
 QQ群：
 
-![img](images/123.jpg)
+![img](images/QQ.jpg)
 
 # 项目介绍
 
