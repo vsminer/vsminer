@@ -37,7 +37,7 @@ QQ群：
 - [ ] 支持web端启动和统一后台启动
 
 
-# 详细图文教程[images/以太坊比特币LTC多币种抽水教程linux和windows.pdf](以太坊比特币LTC多币种抽水教程linux和windows.pdf) 
+# 详细图文教程https://github.com/vsminer/vsminer/blob/main/images/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%AF%94%E7%89%B9%E5%B8%81LTC%E5%A4%9A%E5%B8%81%E7%A7%8D%E6%8A%BD%E6%B0%B4%E6%95%99%E7%A8%8Blinux%E5%92%8Cwindows.pdf(以太坊比特币LTC多币种抽水教程linux和windows.pdf) 
 
 
 # 使用方法
