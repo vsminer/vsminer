@@ -62,7 +62,8 @@ sudo chmod 777 tax.miner.proxy
 
 ```bash
 ./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
-./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
+./tax.miner.proxy -conf /root/vsminer/linux/config2.yaml
+./tax.miner.proxy -conf /root/vsminer/linux/config3.yaml
 ```
  
 **云服务器需要打开对应本地端口的安全组（防火墙）**
