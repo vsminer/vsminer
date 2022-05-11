@@ -49,8 +49,8 @@ QQ群：
 ```
 git clone https://github.com/vsminer/vsminer.git
 cd vsminer/linux
-sudo chmod 777 tax.miner.proxy 
-./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
+sudo chmod 777 vsminer.proxy 
+./vsminer.proxy -conf /root/vsminer/linux/config.yaml
 ```
 
 
@@ -61,9 +61,9 @@ sudo chmod 777 tax.miner.proxy
 **配置多个config文件，指定不同config.yaml来启动多个矿池抽水转发端口**
 
 ```bash
-./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
-./tax.miner.proxy -conf /root/vsminer/linux/config2.yaml
-./tax.miner.proxy -conf /root/vsminer/linux/config3.yaml
+./vsminer.proxy -conf /root/vsminer/linux/config.yaml
+./vsminer.proxy -conf /root/vsminer/linux/config2.yaml
+./vsminer.proxy -conf /root/vsminer/linux/config3.yaml
 ```
  
 **云服务器需要打开对应本地端口的安全组（防火墙）**
@@ -127,7 +127,7 @@ dashboard_observer_token: "tax-yyds"
 测试成功后可以``ctrl+c``杀死进程后，使用**后台启动**：
 
 ```
-nohup ./tax.miner.proxy -conf /root/vsminer/linux/config.yaml
+nohup ./vsminer.proxy -conf /root/vsminer/linux/config.yaml
 ```
 
 即可后台运行，这样可以实现关掉命令行窗口后，矿机依然可以连上节点，保持抽水和中转的运行。
@@ -143,7 +143,7 @@ tail -f /tmp/tax_proxy--端口.stat.log
 输入
 
 ```
-ps -aux | grep "tax.miner.proxy"
+ps -aux | grep "vsminer.proxy"
 ```
 得到进程id
 
@@ -167,13 +167,13 @@ pwd
 安装:
 
 ```
-./tax.miner.proxy -conf pwd的结果/config.yaml -install
+./vsminer.proxy -conf pwd的结果/config.yaml -install
 ```
 
 删除开机自启：
 
 ```
-./tax.miner.proxy -conf pwd的结果/config.yaml -remove
+./vsminer.proxy -conf pwd的结果/config.yaml -remove
 ```
 
 光安装自启动程序不会自动运行，需要重启服务器或者用以下命令运行
@@ -181,13 +181,13 @@ pwd
 运行：
 
 ```
-./tax.miner.proxy -conf pwd的结果/config.yaml -start
+./vsminer.proxy -conf pwd的结果/config.yaml -start
 ```
 
 停止：
  
 ```
-./tax.miner.proxy -conf pwd的结果/config.yaml -stop
+./vsminer.proxy -conf pwd的结果/config.yaml -stop
 ```
 
 如果需要修改本地端口，需要先删除开机自启动再修改，修改完后再安装。
@@ -205,14 +205,14 @@ encrypt_mode: 2
 **前台启动**
 
 ```
-tax.miner.connector -l :本地端口 -r 服务器ip:服务器端口
+vsminer.connector -l :本地端口 -r 服务器ip:服务器端口
 ```
 
 **进程守护+开机自启**
 
 ```
-tax.miner.connector -l :本地端口 -r 服务器ip:服务器端口 -install
-tax.miner.connector -l :本地端口 -r 服务器ip:服务器端口 -start
+vsminer.connector -l :本地端口 -r 服务器ip:服务器端口 -install
+vsminer.connector -l :本地端口 -r 服务器ip:服务器端口 -start
 ```
 
 **注意：使用隧道混淆模式在纯转发时，会有0.1%的抽水，如果仅仅使用ssl来纯转发则不会有**
