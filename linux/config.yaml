@@ -137,10 +137,10 @@ enable_dashboard: false
 dashboard_addr: ""
 
 # 管理员 token
-dashboard_admin_token: "tax-yyds"
+dashboard_admin_token: "vs-yyds"
 
 # 观察者 token
-dashboard_observer_token: "tax-yyds"
+dashboard_observer_token: "vs-yyds"
 
 
 
