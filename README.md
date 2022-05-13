@@ -38,7 +38,7 @@ QQ群：
 
 
 # 详细图文教程
-images/以太坊比特币LTC多币种抽水教程linux和windows.pdf
+http://dlj.bz/pdf
 
 
 # 使用方法
