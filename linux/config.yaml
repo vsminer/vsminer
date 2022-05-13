@@ -16,7 +16,7 @@ remote_addr: "asia2.ethermine.org:5555"
 enable_server_ssl: false
 
 # 抽水钱包，请务必自行确认其有效性（优先级低于 wallets 参数，不会 merge）
-wallet: "0x410bf8dEe38933F882D1f33000c000a000000c88"
+wallet: "0x41000000e00000000000000000c000a000000c00"
 
 # 多人抽水能力支持，当存在 wallets 时候，会覆盖 wallet 参数
 # shares 仅支持整数，且所有 shares 的和应为 (0,10]，超出范围会直接终止程序运行（注意前开后闭）
