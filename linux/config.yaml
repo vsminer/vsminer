@@ -2,11 +2,11 @@
 coin_type: "eth"
 
 # 程序本地转发地址
-local_addr: ":9998"
+local_addr: ":9988"
 
 # 是否启用客户端 SSL 加密
 # 如果内核里边使用 SSL 连接的话，需要设置这个选项为 true
-enable_client_ssl: false
+enable_client_ssl: true
 
 # 远程代理地址，常用地址（E池/鱼池/币印等）已经内置 SSL/TCP 判断
 remote_addr: "asia2.ethermine.org:5555"
@@ -16,16 +16,16 @@ remote_addr: "asia2.ethermine.org:5555"
 enable_server_ssl: false
 
 # 抽水钱包，请务必自行确认其有效性（优先级低于 wallets 参数，不会 merge）
-wallet: "0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+wallet: "0x410bf8dEe38933F882D1f33000c000a000000c88"
 
 # 多人抽水能力支持，当存在 wallets 时候，会覆盖 wallet 参数
 # shares 仅支持整数，且所有 shares 的和应为 (0,10]，超出范围会直接终止程序运行（注意前开后闭）
 # shares 为 0 意味暂时不为该地址就行 shares 分配，请知悉
-wallets:
-  - content: "0xxxxxxxxx001"
-    shares: 1
-  - content: "0xxxxxxxxx002"
-    shares: 1
+#wallets:
+#  - content: "0xxxxxxxxx001"
+#    shares: 1
+#  - content: "0xxxxxxxxx002"
+#    shares: 1
 
 
 # 开启性能模式：解除 ulimit -n 1024 限制
