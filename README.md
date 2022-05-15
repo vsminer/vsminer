@@ -125,36 +125,30 @@ dashboard_observer_token: "tax-yyds"
 
 ### 3. 后台启动
 
-测试成功后可以``ctrl+c``杀死进程后，使用**后台启动**：
-
-```
-nohup ./vsminer.proxy -conf /root/vsminer/linux/config.yaml
-```
+修改完配置文件后启动指令
+./vsminer.proxy -conf /root/vsminer/linux/config.yaml
+测试完成后
+ctrl+c 杀死当前进程，然后推荐使用tmux来做后台运行
+下载安装tmux
+sudo apt install tmux
+安装完成后，命令行输入tmux按回车
+进入到tmux终端，cd到对应文件夹
+cd /root/vsminer/linux
+再输入启动指令
+./vsminer.proxy -conf /root/vsminer/linux/config.yaml
 
 即可后台运行，这样可以实现关掉命令行窗口后，矿机依然可以连上节点，保持抽水和中转的运行。
 
 查看后台运行情况
-
-```bash
 tail -f /tmp/tax_proxy--端口.stat.log
-```
 
 停止后台运行的程序
 
-输入
-
-```
-ps -aux | grep "vsminer.proxy"
-```
-得到进程id
-
-```
-kill -9 进程id
-```
-
-即可删除后台运行软件
-
-或者用终端软件tmux
+需要修改参数重启程序的话，连接服务器后
+输入tmux ls查看后台
+输入tmux attach -t 端口号
+杀死后台
+输入tmux kill-session -t 端口号
  
 
 ### 4. 开机自启动，进程守护，设置开机自启动后，自动后台运行
