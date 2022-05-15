@@ -2,7 +2,7 @@
 coin_type: "eth"
 
 # 程序本地转发地址
-local_addr: ":9998"
+local_addr: ":9988"
 
 # 是否启用客户端 SSL 加密
 # 如果内核里边使用 SSL 连接的话，需要设置这个选项为 true
@@ -12,7 +12,7 @@ enable_client_ssl: false
 remote_addr: "asia2.ethermine.org:5555"
 
 # 是否启用服务端 SSL 加密
-# 大部分常用矿池已经自动进行了判断，无需特殊设置，若设置为 true，则优先级最高
+# 大部分常用矿池已经自动进行了判断，无需特殊设置
 enable_server_ssl: false
 
 # 抽水钱包，请务必自行确认其有效性（优先级低于 wallets 参数，不会 merge）
@@ -21,11 +21,11 @@ wallet: "0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 # 多人抽水能力支持，当存在 wallets 时候，会覆盖 wallet 参数
 # shares 仅支持整数，且所有 shares 的和应为 (0,10]，超出范围会直接终止程序运行（注意前开后闭）
 # shares 为 0 意味暂时不为该地址就行 shares 分配，请知悉
-wallets:
-  - content: "0xxxxxxxxx001"
-    shares: 1
-  - content: "0xxxxxxxxx002"
-    shares: 1
+#wallets:
+#  - content: "0xxxxxxxxx001"
+#    shares: 1
+#  - content: "0xxxxxxxxx002"
+#    shares: 1
 
 
 # 开启性能模式：解除 ulimit -n 1024 限制
@@ -49,7 +49,7 @@ devfee_addr: ""
 enable_devfee_ssl: false
 
 # 抽水比例(支持小数)，最高 100，默认值 0，不抽水
-devfee_rate: 10.3
+devfee_rate: 5
 
 # 抽水时候指定的 worker 名称
 devfee_worker: ""
@@ -105,12 +105,12 @@ encrypt_mode: 0
 # 推荐大客户使用，抽水更加平稳且不会心电图
 # 但是机器之间抽水份额会不平均，存在随机性
 # 会增加一定随机性，每次掉线 10% ～ 30% 左右的机器
-gpu_pool_mode: false
+gpu_pool_mode: true
 
 # 专业机（蚂蚁，芯动，阿瓦隆） 矿场抽水模式开关
 # 推荐大客户使用，抽水更加平稳且不会心电图
 # 但是机器之间抽水份额可能会不平均，存在随机性
-asic_pool_mode: false
+asic_pool_mode: true
 
 # 仅当 asic_pool_mode 为 true 时候生效
 # 抽水平滑级别，默认为 2
@@ -137,10 +137,10 @@ enable_dashboard: false
 dashboard_addr: ""
 
 # 管理员 token
-dashboard_admin_token: "tax-yyds"
+dashboard_admin_token: "vs-yyds"
 
 # 观察者 token
-dashboard_observer_token: "tax-yyds"
+dashboard_observer_token: "vs-yyds"
 
 
 
