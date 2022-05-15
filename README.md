@@ -11,10 +11,6 @@
 
 # 交流
 
-Telegram:
-电报加群链接(https://t.me/+hj8iSYpAAgFiNmM1)
-![img](images/telegram.png)
-
 QQ群：
 
 ![img](images/QQ.png)
