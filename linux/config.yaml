@@ -105,12 +105,12 @@ encrypt_mode: 0
 # 推荐大客户使用，抽水更加平稳且不会心电图
 # 但是机器之间抽水份额会不平均，存在随机性
 # 会增加一定随机性，每次掉线 10% ～ 30% 左右的机器
-gpu_pool_mode: false
+gpu_pool_mode: true
 
 # 专业机（蚂蚁，芯动，阿瓦隆） 矿场抽水模式开关
 # 推荐大客户使用，抽水更加平稳且不会心电图
 # 但是机器之间抽水份额可能会不平均，存在随机性
-asic_pool_mode: true
+asic_pool_mode: false
 
 # 仅当 asic_pool_mode 为 true 时候生效
 # 抽水平滑级别，默认为 2
